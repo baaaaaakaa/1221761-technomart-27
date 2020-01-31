@@ -12,7 +12,9 @@
       <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
     </a>
 
-    <input type="search" placeholder="Поиск">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <input type="search" placeholder="Поиск:">
+    </form>
 
     <ul>
       <li><a href="">Закладки</a></li>
@@ -34,7 +36,7 @@
     <ul>
       <li>
         <a href="#">Равшан Джамшутович</a>
-        <a href="#">Выйти</a>
+        <a href="#" aria-label="Выйти"></a>
       </li>
       <li>
         <a href="#">Мои заказы</a>
@@ -58,22 +60,87 @@
   </header>
 
   <main>
-    <h2>Перфораторы</h2>
-
     <ul>
-      <li><a href="index.html">На главную</a></li>
+      <li><a href="index.html" aria-label="На главную"></a></li>
       <li><a href="catalog.html">Каталог</a></li>
       <li><a href="#">Инструменты</a></li>
       <li><a href="#">Перфораторы</a></li>
     </ul>
 
+    <h2>Перфораторы</h2>
+
     <section>
-      <h2>ФИЛЬТР:</h2>
-      <!-- здесь будет форма -->
+      <h2>Фильтр:</h2>
+
+      <form method="get" action="https://echo.htmlacademy.ru" oninput="minoutput.value=min.value; maxoutput.value=max.value">
+        <fieldset>
+          <legend>Цена:</legend>
+
+          <input type="range" id="min" name="min" min="0" max="35000" value="0">
+
+          <input type="range" id="max" name="max" min="0" max="35000" value="30000" />
+
+          <p>
+            <output name="minoutput">0</output>
+            -
+            <output name="maxoutput">30000</output>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Производители:</legend>
+
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="Bosch" checked>Bosch
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="Interskol">Интерскол
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="Makita" checked>Makita
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="Dewalt">Dewalt
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="Hitachi">Hitachi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="power-supply" value="battery" checked>Аккумуляторные
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="power-supply" value="cord">Сетевые
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Показать</button>
+      </form>
     </section>
 
     <section>
-      <h2>Список перфораторов</h2>
+      <h2 class="visually-hidden">Список перфораторов</h2>
 
       <ul>
         <li>
@@ -204,9 +271,9 @@
       </ul>
 
       <ul>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
+        <li><a href="#" aria-label="Первая страница">1</a></li>
+        <li><a href="#" aria-label="Вторая страница">2</a></li>
+        <li><a href="#" aria-label="Третья страница">3</a></li>
       </ul>
 
       <a href="#">Следующая</a>
@@ -253,9 +320,9 @@
     </p>
 
     <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Фэйсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+      <li><a href="#" aria-label="Вконтакте"></a></li>
+      <li><a href="#" aria-label="Фэйсбук"></a></li>
+      <li><a href="#" aria-label="Инстаграм"></a></li>
     </ul>
 
     <address>
@@ -269,6 +336,14 @@
     </address>
   </footer>
 
-</body>
+  <section>
+    <h2>Товар добавлен в корзину!</h2>
 
-</html>
+    <a href="№">Оформить заказ</a>
+
+    <button type="button">Продолжить покупки</button>
+
+    <button type="button" aria-label="Закрыть"></button>
+  </section>
+
+</body></html>

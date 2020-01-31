@@ -12,7 +12,9 @@
       <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
     </a>
 
-    <input type="search" placeholder="Поиск">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <input type="search" placeholder="Поиск:">
+    </form>
 
     <ul>
       <li><a href="">Закладки</a></li>
@@ -33,10 +35,10 @@
 
     <ul>
       <li>
-        <a href="">Войти</a>
+        <a href="#">Войти</a>
       </li>
       <li>
-        <a href="">Регистрация</a>
+        <a href="#">Регистрация</a>
       </li>
     </ul>
 
@@ -54,22 +56,130 @@
   </header>
 
   <main>
-    <h1>Интернет-магазин «Техномарт»</h1>
-
     <section>
-      <h2>Промо</h2>
+      <h2 class="visually-hidden">Промо</h2>
     </section>
 
     <section>
       <h2>Популярные товары</h2>
+
+      <a href="#">Все популярные товары</a>
+
+      <ul>
+        <li>
+          <img src="img/item-image_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+
+          <a href="#">В закладки</a>
+
+          <a href="#">Купить</a>
+
+          <h3>Перфоратор BOSCH BFG 3000</h3>
+
+          <del>32500 Р.</del>
+
+          <p>25500 Р.</p>
+        </li>
+
+        <li>
+          <img src="img/item-image_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+
+          <a href="#">В закладки</a>
+
+          <a href="#">Купить</a>
+
+          <h3>Перфоратор BOSCH BFG 3000</h3>
+
+          <del>22500 Р.</del>
+
+          <p>15500 Р.</p>
+        </li>
+
+        <li>
+          <img src="img/item-image_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+
+          <a href="#">В закладки</a>
+
+          <a href="#">Купить</a>
+
+          <h3>Перфоратор BOSCH BFG 6000</h3>
+
+          <del>30500 Р.</del>
+
+          <p>25500 Р.</p>
+        </li>
+
+        <li>
+          <img src="img/item-image_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+
+          <a href="#">В закладки</a>
+
+          <a href="#">Купить</a>
+
+          <h3>Перфоратор BOSCH BFG 2000</h3>
+
+          <del></del>
+
+          <p>15500 Р.</p>
+        </li>
+      </ul>
     </section>
 
     <section>
       <h2>Популярные производители</h2>
+
+      <a href="#">Все производители</a>
+
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/bosch.png" width="126px" height="37px" alt="Логотип Bosch">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/makita.png" width="123px" height="40px" alt="Логотип Makita">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/de-walt.png" width="146px" height="44px" alt="Логотип DeWalt">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/intercom.png" width="200px" height="88px" alt="Логотип Интерскон">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/hitachi.png" width="169px" height="31px" alt="Логотип Hitachi">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/lg.png" width="121px" height="73px" alt="Логотип LG">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/aeg.png" width="151px" height="96px" alt="Логотип AEG">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/metabo.png" width="264px" height="69px" alt="Логотип Metabo">
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section>
       <h2>Сервисы</h2>
+
+      <p>
+        Хороший интернет-магазин отличается от плохого не только ценами!
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+      </p>
     </section>
 
     <section>
@@ -102,8 +212,8 @@
         заехав в наш офис:
       </p>
 
-      <a href="">
-        <img src="img/map.png" width="300" height="158" alt="Месторасположение на карте">
+      <a href="#">
+        <img src="img/map.png" width="300" height="158" alt="Наше месторасположение на карте. ул.Большая конюшенная, 19">
       </a>
 
       <a href="#">Заблудились? Напишите нам!</a>
@@ -142,9 +252,9 @@
     </p>
 
     <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Фэйсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+      <li><a href="#" aria-label="Вконтакте"></a></li>
+      <li><a href="#" aria-label="Фэйсбук"></a></li>
+      <li><a href="#" aria-label="Инстаграм"></a></li>
     </ul>
 
     <address>
@@ -161,9 +271,24 @@
   <section>
     <h2>Обратная связь</h2>
 
-    <!-- здесь будет форма -->
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="feedback-name">Ваше имя:</label>
+        <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+      </p>
 
-    <button type="button">Закрыть</button>
+      <p>
+        <label for="feedback-email">Ваш e-mail:</label>
+        <input id="feedback-email" type="email" name="email" value="" placeholder="email@example.com">
+      </p>
+
+      <label for="feedback-text">Текст письма:</label>
+      <textarea id="feedback-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+
+      <button type="submit">Отправить</button>
+    </form>
+
+    <button type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 
