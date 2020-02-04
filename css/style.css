@@ -1,0 +1,164 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #f4f7f9;
+}
+
+/* ВЕРХНЯЯ ЧАСТЬ ХЕДЕРА */
+
+.header-bar {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+/* ПОЛЕ ПОИСКА */
+.search-form input {
+  line-height: inherit;
+
+  border: none;
+
+  background-color: transparent;
+}
+
+.search-form input::placeholder {
+  color: #ffffff;
+}
+
+.search-form input:hover {
+  background-color: #212a3a;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+}
+
+/* ЗАКЛАДКИ-КОРЗИНА-ОФОРМЛЕНИЕ ЗАКАЗА */
+.header-bar__nav-list {
+  list-style: none;
+}
+
+.header-bar__nav-item:hover {
+  background-color: #212a3a;
+}
+
+.header-bar__nav-item:active {
+  background-color: #161d29;
+}
+
+.header-bar__nav-item a {
+  color: inherit;
+}
+
+.header-bar__nav-item a:active {
+  opacity: 60%;
+}
+
+.header-bar__nav-item_green {
+  background-color: #63a63e;
+}
+
+.header-bar__nav-item_green:hover {
+  background-color: #5fbb2d;
+}
+
+.header-bar__nav-item_green:active {
+  background-color: #518534;
+}
+
+.header-bar__nav-item_green a:active {
+  opacity: 50%;
+}
+
+/* СРЕДНЯЯ ЧАСТЬ ХЕДЕРА */
+
+/* ЗАГОЛОВОК */
+.header-title {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+/* КОНТАКТЫ */
+.header-contacts {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  text-align: center;
+  color: #32425c;
+}
+
+.header-contacts a {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color: #ee3643;
+
+  border: solid 3px #ffffff;
+}
+
+/* USER */
+
+.user-nav__list {
+  font-size: 21px;
+  line-height: 21px;
+
+  list-style: none;
+}
+
+.user-nav__item {
+  background-color: #ffffff;
+}
+
+.user-nav__item a {
+  color: inherit;
+}
+
+.user-nav__item a:hover {
+  color: #ee3643;
+}
+
+.user-nav__item a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.user-nav__item_small {
+  background-color: transparent;
+}
+
+.user-nav__item_small a {
+  font-size: 16px;
+  line-height: normal;
+  text-decoration: underline;
+  color: #32425c;
+}

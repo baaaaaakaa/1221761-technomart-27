@@ -4,41 +4,48 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин «Техномарт»</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <a href="index.html">
-      <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
-    </a>
+  <header class="header">
+    <div class="header-bar">
+      <a href="index.html">
+        <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
+      </a>
 
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <label for="search">Поиск</label>
-      <input id="search" type="search" placeholder="Поиск:">
-    </form>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="search">Поиск</label>
+        <input id="search" type="search" placeholder="Поиск:">
+      </form>
 
-    <ul>
-      <li><a href="">Закладки</a></li>
-      <li><a href="">Корзина</a></li>
-      <li><a href="">Оформить заказ</a></li>
-    </ul>
+      <ul class="header-bar__nav-list">
+        <li class="header-bar__nav-item"><a href="">Закладки</a></li>
+        <li class="header-bar__nav-item"><a href="">Корзина</a></li>
+        <li class="header-bar__nav-item header-bar__nav-item_green"><a href="">Оформить заказ</a></li>
+      </ul>
+    </div>
 
-    <h1>
+    <h1 class="header-title">
       Интернет-магазин
       строительных материалов
       и инструментов для ремонта
     </h1>
 
-    <address>
+    <address class="header-contacts">
       <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
     </address>
 
-    <ul>
-      <li>
+    <ul class="user-nav__list">
+      <li class="user-nav__item">
         <a href="#">Войти</a>
       </li>
-      <li>
+      <li class="user-nav__item">
         <a href="#">Регистрация</a>
       </li>
     </ul>
@@ -291,6 +298,4 @@
 
     <button type="button">Закрыть</button>
   </section>
-</body>
-
-</html>
+</body></html>
