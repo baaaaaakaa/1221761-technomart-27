@@ -19,11 +19,11 @@
       </a>
 
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="search">Поиск</label>
+        <label class="visually-hidden" for="search">Поиск</label>
         <input id="search" type="search" placeholder="Поиск:">
       </form>
 
-      <ul class="header-bar__nav-list">
+      <ul class="header-bar__nav-list list">
         <li class="header-bar__nav-item"><a href="">Закладки</a></li>
         <li class="header-bar__nav-item"><a href="">Корзина</a></li>
         <li class="header-bar__nav-item header-bar__nav-item_green"><a href="">Оформить заказ</a></li>
@@ -41,7 +41,7 @@
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
     </address>
 
-    <ul class="user-nav__list">
+    <ul class="user-nav__list list">
       <li class="user-nav__item">
         <a href="#">Войти</a>
       </li>
@@ -51,7 +51,7 @@
     </ul>
 
     <nav>
-      <ul class="header-nav__list">
+      <ul class="header-nav__list list">
         <li class="header-nav__item"><a href='index.html'>Главная</a></li>
         <li class="header-nav__item"><a href='#'>Компания</a></li>
         <li class="header-nav__item"><a href='catalog.html'>Каталог</a></li>
@@ -66,6 +66,42 @@
   <main>
     <section>
       <h2 class="visually-hidden">Промо</h2>
+
+      <ul class="promo-list list">
+        <li class="promo-item promo-item_materials">
+          <h3>Материалы</h3>
+
+          <a class="button button_promo" href="#">на любой вкус</a>
+        </li>
+
+        <li class="promo-item promo-item_tool">
+          <h3>Инструмент</h3>
+
+          <a class="button button_promo" href="#">на все случаи</a>
+        </li>
+
+        <li class="promo-item promo-item_equipment">
+          <h3>Техника</h3>
+
+          <a class="button button_promo" href="#">для стройки</a>
+        </li>
+
+        <li class="promo-item promo-item_slide">
+
+        </li>
+
+        <li class="promo-item promo-item_discount">
+          <h3>Скидки 50%</h3>
+
+          <a class="button button_promo" href="#">на 350 товаров</a>
+        </li>
+
+        <li class="promo-item promo-item_delivery">
+          <h3>Доставка</h3>
+
+          <a class="button button_promo" href="#">бесплатно</a>
+        </li>
+      </ul>
     </section>
 
     <section>
@@ -75,7 +111,7 @@
         <a class="button button_red" href="#">Все популярные товары</a>
       </div>
 
-      <ul class="catalog-list">
+      <ul class="catalog-list list">
         <li class="catalog-item">
           <img src="img/item-image_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
 
@@ -85,7 +121,7 @@
 
           <h3 class="catalog-item__heading">Перфоратор BOSCH BFG 3000</h3>
 
-          <del class="catalog-item__price_del">32500 Р.</del>
+          <del class="catalog-item__price catalog-item__price_del">32500 Р.</del>
 
           <p class="catalog-item__price">25500 Р.</p>
         </li>
@@ -99,7 +135,7 @@
 
           <h3 class="catalog-item__heading">Перфоратор BOSCH BFG 3000</h3>
 
-          <del class="catalog-item__price_del">22500 Р.</del>
+          <del class="catalog-item__price catalog-item__price_del">22500 Р.</del>
 
           <p class="catalog-item__price">15500 Р.</p>
         </li>
@@ -113,7 +149,7 @@
 
           <h3 class="catalog-item__heading">Перфоратор BOSCH BFG 6000</h3>
 
-          <del class="catalog-item__price_del">30500 Р.</del>
+          <del class="catalog-item__price catalog-item__price_del">30500 Р.</del>
 
           <p class="catalog-item__price">25500 Р.</p>
         </li>
@@ -127,7 +163,7 @@
 
           <h3 class="catalog-item__heading">Перфоратор BOSCH BFG 2000</h3>
 
-          <del class="catalog-item__price_del"></del>
+          <del class="catalog-item__price catalog-item__price_del"></del>
 
           <p class="catalog-item__price">15500 Р.</p>
         </li>
@@ -141,7 +177,7 @@
         <a class="button button_red" href="#">Все производители</a>
       </div>
 
-      <ul class="manufacturer-list">
+      <ul class="manufacturer-list list">
         <li class="manufacturer-item">
           <a href="#">
             <img src="img/bosch.png" width="126px" height="37px" alt="Логотип Bosch">
@@ -207,7 +243,7 @@
         Техномарт работает со многими транспортными компаниями:
       </p>
 
-      <ul class="delivery-list">
+      <ul class="delivery-list list">
         <li class="delivery-item">Деловые линии</li>
         <li class="delivery-item">Автотрейдинг</li>
         <li class="delivery-item">ЖелДорЭкспедиция</li>
@@ -238,7 +274,7 @@
       <img src="img/logo.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
     </a>
 
-    <ul class="footer-nav__list">
+    <ul class="footer-nav__list list">
       <li class="footer-nav__item"><a href='#'>Компания</a></li>
       <li class="footer-nav__item"><a href='#'>Новости</a></li>
       <li class="footer-nav__item"><a href='catalog.html'>Каталог</a></li>
@@ -251,7 +287,7 @@
       <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
     </address>
 
-    <ul class="footer-nav__list footer-nav__list_wheat">
+    <ul class="footer-nav__list footer-nav__list_wheat list">
       <li class="footer-nav__item"><a href='#'>Материалы</a></li>
       <li class="footer-nav__item"><a href='#'>Техника</a></li>
       <li class="footer-nav__item"><a href='#'>Инструмент</a></li>
@@ -264,21 +300,21 @@
         Все права защищены
       </p>
 
-      <ul class="footer-social__list">
+      <ul class="footer-social__list list">
         <li class="footer-social__item footer-social__item_vk"><a href="#">Вконтакте</a></li>
         <li class="footer-social__item footer-social__item_fb"><a href="#">Фэйсбук</a></li>
         <li class="footer-social__item footer-social__item_insta"><a href="#">Инстаграм</a></li>
       </ul>
 
-      <address class="copyright-contacts">
+      <p class="copyright-contacts">
         Обратная связь:
         <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </address>
+      </p>
 
-      <address class="copyright-contacts">
+      <p class="copyright-contacts">
         Разработано —
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-      </address>
+      </p>
     </div>
   </footer>
 
