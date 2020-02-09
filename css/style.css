@@ -404,9 +404,12 @@ a {
 
 /* ПРОМО НА ГЛАВНОЙ */
 .promo-list {
+  color: #ffffff;
+}
+
+.promo-item h3 {
   font-size: 24px;
   line-height: 30px;
-  color: #ffffff;
 }
 
 .promo-item_materials {
@@ -427,6 +430,23 @@ a {
 
 .promo-item_delivery {
   background-color: #ffc047;
+}
+
+/* */
+
+.promo-item_slider {
+  background-color: darkslategrey;
+}
+
+.slider__slide h3 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.slider__slide p {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
@@ -462,6 +482,64 @@ a {
   background-color: #ee3643;
 
 }
+
+/* */
+.tabs__controls {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.tabs__control {
+  background-color: #32425c;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+.tabs__contents h3{
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  color: #32425c;
+}
+
+.tabs__control:hover {
+  background-color: #293449;
+}
+
+#tab-1:checked ~ .tabs__controls > .tabs__control:nth-of-type(1) {
+  color: #32425c;
+
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+}
+
+#tab-1:not(:checked) ~ .tabs__contents > .tab-1 {
+  display: none;
+}
+
+#tab-2:checked ~ .tabs__controls > .tabs__control:nth-of-type(2) {
+  color: #32425c;
+
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+}
+
+#tab-2:not(:checked) ~ .tabs__contents > .tab-2 {
+  display: none;
+}
+
+#tab-3:checked ~ .tabs__controls > .tabs__control:nth-of-type(3) {
+  color: #32425c;
+
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+}
+
+#tab-3:not(:checked) ~ .tabs__contents > .tab-3 {
+  display: none;
+}
+
 
 /* НАВИГАЦИЯ В КАТАЛОГЕ */
 .catalog-nav__item a {

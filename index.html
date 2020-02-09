@@ -86,8 +86,31 @@
           <a class="button button_promo" href="#">для стройки</a>
         </li>
 
-        <li class="promo-item promo-item_slide">
+        <li class="promo-item promo-item_slider slider">
+          <ul class="slider__slides list">
+            <li class="slider__slide">
+              <img src="img/slide-image-1.jpg" alt="" width="620px" height="266px">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <a class="button button_red" href="#">Открыть каталог</a>
+            </li>
 
+            <li class="slider__slide">
+              <img src="img/slide-image-2.jpg" alt="" width="620px" height="266px">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a class="button button_red" href="#">Открыть каталог</a>
+            </li>
+          </ul>
+
+          <ul class="slider__dotts list">
+            <li class="slider__dott"></li>
+            <li class="slider__dott"></li>
+          </ul>
+
+          <button class="slider__button slider__button_prev" type="button" aria-label="Предидущий слайд"></button>
+
+          <button class="slider__button slider__button_next" type="button" aria-label="Следующий слайд"></button>
         </li>
 
         <li class="promo-item promo-item_discount">
@@ -228,6 +251,57 @@
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
+
+      <div class="tabs">
+        <input class="visually-hidden" id="tab-1" type="radio" name="tabs" checked>
+        <input class="visually-hidden" id="tab-2" type="radio" name="tabs">
+        <input class="visually-hidden" id="tab-3" type="radio" name="tabs">
+
+        <ul class="tabs__controls list">
+          <li class="tabs__control">
+            <label for="tab-1">Доставка</label>
+          </li>
+
+          <li class="tabs__control">
+            <label for="tab-2">Гарантия</label>
+          </li>
+
+          <li class="tabs__control">
+            <label for="tab-3">Кредит</label>
+          </li>
+        </ul>
+
+        <ul class="tabs__contents list">
+          <li class="tabs__content tab-1">
+            <h3>Доставка</h3>
+            <p class="section__text">
+              Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем,
+              поднимая его на ваш этаж!
+            </p>
+          </li>
+
+          <li class="tabs__content tab-2">
+            <h3>Гарантия</h3>
+            <p class="section__text">
+              Если купленный у нас товар поломается или заискрит,
+              а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </li>
+
+          <li class="tabs__content tab-3">
+            <h3>Кредит</h3>
+            <p class="section__text">
+              Залезть в долговую яму стало проще!
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <a class="button button_red" href="#">Отправить заявку</a>
+          </li>
+        </ul>
+
+      </div>
     </section>
 
     <section>
@@ -266,7 +340,6 @@
 
       <a class="button button_red" href="#">Заблудились? Напишите нам!</a>
     </section>
-
   </main>
 
   <footer class="footer">
