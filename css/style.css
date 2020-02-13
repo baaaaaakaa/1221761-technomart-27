@@ -48,6 +48,102 @@ a {
   flex-wrap: wrap;
 }
 
+/* КНОПКИ */
+.button {
+  display: block;
+
+  min-height: 38px;
+
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  border-radius: 3px;
+}
+
+.button_red {
+  background-color: #ee3643;
+}
+
+.button_red:hover {
+  background-color: #ca2c37;
+}
+
+.button_red:active {
+  background-color: #ba2732;
+}
+
+.button_buy {
+  width: 135px;
+
+  background-color: #63a63e;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.button_buy:hover {
+  background-color: #5fbb2d;
+}
+
+.button_buy:active {
+  background-color: #518534;
+
+  box-shadow: none;
+}
+
+.button_bookmark {
+  width: 135px;
+
+  padding-bottom: 7px;
+  padding-top: 7px;
+
+  color: #32425c;
+
+  background-color: #ffffff;
+  border: solid 3px #63a63e;
+}
+
+.button_bookmark:hover {
+  border: solid 3px #32425c;
+}
+
+.button_bookmark:active {
+  opacity: 0.3;
+}
+
+.button_catalog {
+  color: inherit;
+
+  border: solid 1px #e5e5e5;
+}
+
+.button_catalog:hover {
+  border: solid 1px #bdc6ca;
+}
+
+.button_catalog:active {
+  border: solid 1px #ee3643;
+}
+
+.button_promo {
+  width: 135px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button_promo:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.button_promo:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
 /* HEADER */
 
 .header {
@@ -174,6 +270,9 @@ a {
 }
 
 .section__heading {
+  margin-top: 0;
+  margin-bottom: 39px;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
@@ -186,11 +285,48 @@ a {
 }
 
 .section__text {
+  margin-top: 36px;
+  margin-bottom: 0;
+
   font-family: PTSans;
   font-size: 13px;
   line-height: 24px;
 }
 
+.company {
+  width: 520px;
+  padding-top: 82px;
+  padding-bottom: 86px;
+}
+
+.company p:nth-of-type(2) {
+  width: 386px;
+}
+
+.company .button{
+  width: 220px;
+
+  margin-top: 37px;
+}
+
+.contacts {
+  width: 300px;
+  padding-top: 82px;
+
+  margin-left: auto;
+}
+
+.contacts img{
+  margin-top: 36px;
+}
+
+.contacts p {
+  width: 179px;
+}
+
+.contacts .button{
+  margin-top: 40px;
+}
 
 /* СТАНИЦА КАТАЛОГА */
 .catalog-page {
@@ -301,86 +437,6 @@ a {
   text-decoration: none;
   color: #ee3643;
 }
-
-
-/* КНОПКИ */
-.button {
-  font-family: 'Cuprum', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-}
-
-.button_red {
-  background-color: #ee3643;
-}
-
-.button_red:hover {
-  background-color: #ca2c37;
-}
-
-.button_red:active {
-  background-color: #ba2732;
-}
-
-.button_buy {
-  background-color: #63a63e;
-  box-shadow: inset 0px -3px 0 0 #367315;
-}
-
-.button_buy:hover {
-  background-color: #5fbb2d;
-}
-
-.button_buy:active {
-  background-color: #518534;
-
-  box-shadow: none;
-}
-
-.button_bookmark {
-  color: #32425c;
-
-  background-color: #ffffff;
-  border: solid 3px #63a63e;
-}
-
-.button_bookmark:hover {
-  border: solid 3px #32425c;
-}
-
-.button_bookmark:active {
-  opacity: 0.3;
-}
-
-.button_catalog {
-  color: inherit;
-
-  border: solid 1px #e5e5e5;
-}
-
-.button_catalog:hover {
-  border: solid 1px #bdc6ca;
-}
-
-.button_catalog:active {
-  border: solid 1px #ee3643;
-}
-
-.button_promo {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.button_promo:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.button_promo:active {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 
 /* СПИСКИ */
 .list {
@@ -618,6 +674,10 @@ a {
   line-height: 20px;
 }
 
+.delivery-item {
+  margin-top: 23px;
+}
+
 .delivery-item:before {
   content: "";
 
@@ -626,6 +686,7 @@ a {
 
   width: 25px;
   height: 2px;
+  margin-right: 11px;
 
   background-color: #ee3643;
 
