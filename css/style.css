@@ -37,9 +37,22 @@ a {
   overflow: hidden;
 }
 
+.fixed-container {
+  width: 940px;
+
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* HEADER */
 
 .header {
+  padding-bottom: 60px;
+
   background-color: #f4f7f9;
 }
 
@@ -50,11 +63,46 @@ a {
   line-height: 18px;
   color: #ffffff;
 
+  margin-bottom: 46px;
+
   background-color: #293449;
+}
+
+.header-bar .flex-container {
+  align-items: center;
+
+  min-height: 42px;
+}
+
+.header-bar__logo {
+  width: 220px;
+  height: 42px;
+
+  padding-top: 13px;
+}
+
+.logo {
+  text-align: center;
+
+  box-shadow: 0px 5px 0 0 #b62a2d;
+  background-color: #ee3643;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+  box-shadow: 0px 5px 0 0 #9b2022;
+}
+
+.logo:active {
+  background-color: #ba2732;
+  box-shadow: 0px 5px 0 0 #8e1a23;
 }
 
 /* ПОЛЕ ПОИСКА */
 .search-form input {
+  width: 270px;
+  height: 42px;
+
   line-height: inherit;
 
   border: none;
@@ -78,6 +126,11 @@ a {
 
 /* ЗАГОЛОВОК */
 .header-title {
+  width: 197px;
+
+  margin: 0;
+  margin-left: 53px;
+
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
@@ -87,6 +140,10 @@ a {
 
 /* КОНТАКТЫ */
 .header-contacts {
+  width: 270px;
+
+  margin-left: 70px;
+
   font-size: 14px;
   font-style: normal;
   line-height: 24px;
@@ -95,9 +152,12 @@ a {
 }
 
 .header-contacts a {
+  display: block;
+  width: 100%;
+
   font-size: 21px;
-  line-height: 21px;
-  text-align: left;
+  line-height: 39px;
+  text-align: center;
   color: #ee3643;
 
   border: solid 3px #ffffff;
@@ -171,21 +231,62 @@ a {
   background-color: #32425c;
 }
 
-.footer-contacts {
+.footer__logo {
+  width: 220px;
+  height: 63px;
+
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.footer__contacts {
+  width: 325px;
+
+  margin-top: 30px;
+
   font-style: normal;
 }
 
-.footer-contacts a {
+.footer__contacts a {
   color: inherit;
 }
 
 /* НИЗ ФУТЕРА */
-.footer-bottom {
+.footer__bottom {
+  margin-top: 50px;
+
+  padding-top: 35px;
+  padding-bottom: 28px;
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 
   background-color: #293449;
+}
+
+.footer__copyright {
+  width: 228px;
+
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.copyright-contacts_mail {
+  width: 135px;
+
+  margin-left: auto;
+  margin-right: 50px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.copyright-contacts_dev {
+  width: 96px;
+
+  margin-right: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .copyright-contacts a {
@@ -291,11 +392,24 @@ a {
 
 /* ЗАКЛАДКИ-КОРЗИНА-ОФОРМЛЕНИЕ ЗАКАЗА */
 .header-bar__nav-list {
+  display: flex;
+
+  width: 450px;
+
   margin: 0;
+  margin-left: auto;
   padding: 0;
 
   list-style: none;
 }
+
+.header-bar__nav-item {
+  flex-grow: 1;
+
+  text-align: center;
+  line-height: 42px;
+}
+
 
 .header-bar__nav-item:hover {
   background-color: #212a3a;
@@ -332,7 +446,14 @@ a {
 /* НАВИГАЦИЯ ПОЛЬЗОВАТЕЛЯ */
 
 .user-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+
+  width: 300px;
+
   margin: 0;
+  margin-left: auto;
   padding: 0;
 
   font-size: 21px;
@@ -342,6 +463,8 @@ a {
 }
 
 .user-nav__item {
+  line-height: 45px;
+
   background-color: #ffffff;
 }
 
@@ -358,6 +481,8 @@ a {
 }
 
 .user-nav__item_small {
+  line-height: normal;
+
   background-color: transparent;
 }
 
@@ -368,19 +493,42 @@ a {
   color: #32425c;
 }
 
+.user-nav__item_enter {
+  width: 121px;
+}
+
+.user-nav__item_reg {
+  width: 150px;
+
+  margin-left: 10px;
+
+  text-align: center;
+}
+
+.user-nav__item_user {
+  width: 300px;
+}
+
 /* МЕНЮ */
 
 .header-nav__list {
+  display: flex;
+
   margin: 0;
+  margin-top: 44px;
   padding: 0;
 
   font-size: 17px;
-  line-height: 17px;
+  line-height: 60px;
 
   list-style: none;
 }
 
 .header-nav__item {
+  flex-grow: 1;
+
+  text-align: center;
+
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
 }
@@ -496,7 +644,7 @@ a {
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
 }
 
-.tabs__contents h3{
+.tabs__contents h3 {
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
@@ -594,6 +742,10 @@ a {
 
 /* СОЦ.СЕТИ ФУТЕР */
 .footer-social__list {
+  display: flex;
+
+  margin-left: 160px;
+
   font-size: 0px;
 }
 
@@ -628,6 +780,19 @@ a {
 }
 
 /* НАВИГАЦИЯ ФУТЕР */
+.footer-nav__list {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+
+  line-height:
+}
+
+.footer-nav__item {
+  margin-left: 60px;
+}
+
 .footer-nav__list_wheat {
   color: #ffd180;
 }

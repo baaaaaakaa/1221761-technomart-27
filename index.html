@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Интернет-магазин «Техномарт»</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,43 +14,47 @@
 <body>
   <header class="header">
     <div class="header-bar">
-      <a href="index.html">
-        <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
-      </a>
+      <div class="fixed-container flex-container">
+        <a class="header-bar__logo logo" href="index.html">
+          <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
+        </a>
 
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="search">Поиск</label>
-        <input id="search" type="search" placeholder="Поиск:">
-      </form>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input id="search" type="search" placeholder="Поиск:">
+        </form>
 
-      <ul class="header-bar__nav-list list">
-        <li class="header-bar__nav-item"><a href="">Закладки</a></li>
-        <li class="header-bar__nav-item"><a href="">Корзина</a></li>
-        <li class="header-bar__nav-item header-bar__nav-item_green"><a href="">Оформить заказ</a></li>
+        <ul class="header-bar__nav-list list">
+          <li class="header-bar__nav-item"><a href="">Закладки</a></li>
+          <li class="header-bar__nav-item"><a href="">Корзина</a></li>
+          <li class="header-bar__nav-item header-bar__nav-item_green"><a href="">Оформить заказ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fixed-container flex-container">
+      <h1 class="header-title">
+        Интернет-магазин
+        строительных материалов
+        и инструментов для ремонта
+      </h1>
+
+      <address class="header-contacts">
+        <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </address>
+
+      <ul class="user-nav__list list">
+        <li class="user-nav__item user-nav__item_enter">
+          <a href="#">Войти</a>
+        </li>
+        <li class="user-nav__item user-nav__item_reg">
+          <a href="#">Регистрация</a>
+        </li>
       </ul>
     </div>
 
-    <h1 class="header-title">
-      Интернет-магазин
-      строительных материалов
-      и инструментов для ремонта
-    </h1>
-
-    <address class="header-contacts">
-      <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-    </address>
-
-    <ul class="user-nav__list list">
-      <li class="user-nav__item">
-        <a href="#">Войти</a>
-      </li>
-      <li class="user-nav__item">
-        <a href="#">Регистрация</a>
-      </li>
-    </ul>
-
-    <nav>
+    <nav class="fixed-container">
       <ul class="header-nav__list list">
         <li class="header-nav__item"><a href='index.html'>Главная</a></li>
         <li class="header-nav__item"><a href='#'>Компания</a></li>
@@ -64,7 +68,7 @@
   </header>
 
   <main>
-    <section>
+    <section class="fixed-container">
       <h2 class="visually-hidden">Промо</h2>
 
       <ul class="promo-list list">
@@ -95,7 +99,7 @@
               <a class="button button_red" href="#">Открыть каталог</a>
             </li>
 
-            <li class="slider__slide">
+            <li class="slider__slide visually-hidden">
               <img src="img/slide-image-2.jpg" alt="" width="620px" height="266px">
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
@@ -127,7 +131,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="fixed-container">
       <div class="section__row">
         <h2 class="section__heading section__heading_row">Популярные товары</h2>
 
@@ -193,7 +197,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="fixed-container">
       <div class="section__row">
         <h2 class="section__heading section__heading_row">Популярные производители</h2>
 
@@ -304,7 +308,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="fixed-container">
       <h2 class="section__heading">Компания «Техномарт»</h2>
 
       <p class="section__text">
@@ -326,7 +330,7 @@
       <a class="button button_red" href="#">Подробнее о компании</a>
     </section>
 
-    <section>
+    <section class="fixed-container">
       <h2 class="section__heading">Контакты</h2>
 
       <p class="section__text">
@@ -343,51 +347,54 @@
   </main>
 
   <footer class="footer">
-    <a href="index.html">
-      <img src="img/logo.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
-    </a>
+    <div class="fixed-container flex-container">
+      <a class="footer__logo logo" href="index.html">
+        <img src="img/logo.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
+      </a>
 
-    <ul class="footer-nav__list list">
-      <li class="footer-nav__item"><a href='#'>Компания</a></li>
-      <li class="footer-nav__item"><a href='#'>Новости</a></li>
-      <li class="footer-nav__item"><a href='catalog.html'>Каталог</a></li>
-      <li class="footer-nav__item"><a href='#'>Доставка</a></li>
-      <li class="footer-nav__item"><a href='#'>Контакты</a></li>
-    </ul>
-
-    <address class="footer-contacts">
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-    </address>
-
-    <ul class="footer-nav__list footer-nav__list_wheat list">
-      <li class="footer-nav__item"><a href='#'>Материалы</a></li>
-      <li class="footer-nav__item"><a href='#'>Техника</a></li>
-      <li class="footer-nav__item"><a href='#'>Инструмент</a></li>
-      <li class="footer-nav__item"><a href='#'>Спецпредложения</a></li>
-    </ul>
-
-    <div class="footer-bottom">
-      <p class="footer-copyright">
-        © 2010–2019 Компания «Техномарт»
-        Все права защищены
-      </p>
-
-      <ul class="footer-social__list list">
-        <li class="footer-social__item footer-social__item_vk"><a href="#">Вконтакте</a></li>
-        <li class="footer-social__item footer-social__item_fb"><a href="#">Фэйсбук</a></li>
-        <li class="footer-social__item footer-social__item_insta"><a href="#">Инстаграм</a></li>
+      <ul class="footer-nav__list list">
+        <li class="footer-nav__item"><a href='#'>Компания</a></li>
+        <li class="footer-nav__item"><a href='#'>Новости</a></li>
+        <li class="footer-nav__item"><a href='catalog.html'>Каталог</a></li>
+        <li class="footer-nav__item"><a href='#'>Доставка</a></li>
+        <li class="footer-nav__item"><a href='#'>Контакты</a></li>
       </ul>
 
-      <p class="copyright-contacts">
-        Обратная связь:
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
+      <address class="footer__contacts">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+      </address>
 
-      <p class="copyright-contacts">
-        Разработано —
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-      </p>
+      <ul class="footer-nav__list footer-nav__list_wheat list">
+        <li class="footer-nav__item"><a href='#'>Материалы</a></li>
+        <li class="footer-nav__item"><a href='#'>Техника</a></li>
+        <li class="footer-nav__item"><a href='#'>Инструмент</a></li>
+        <li class="footer-nav__item"><a href='#'>Спецпредложения</a></li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <div class="fixed-container flex-container">
+        <p class="footer__copyright">
+          © 2010–2019 Компания «Техномарт»
+          Все права защищены
+        </p>
+
+        <ul class="footer-social__list list">
+          <li class="footer-social__item footer-social__item_vk"><a href="#">Вконтакте</a></li>
+          <li class="footer-social__item footer-social__item_fb"><a href="#">Фэйсбук</a></li>
+          <li class="footer-social__item footer-social__item_insta"><a href="#">Инстаграм</a></li>
+        </ul>
+
+        <p class="copyright-contacts copyright-contacts_mail">
+          Обратная связь:
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+
+        <p class="copyright-contacts copyright-contacts_dev">
+          Разработано —
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </p>
+      </div>
     </div>
   </footer>
 
@@ -413,4 +420,6 @@
 
     <button type="button">Закрыть</button>
   </section>
-</body></html>
+</body>
+
+</html>
