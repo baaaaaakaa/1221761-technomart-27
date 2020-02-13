@@ -757,10 +757,16 @@ a {
 
 /* КАТАЛОГ ТОВАРОВ*/
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   font-family: 'PTSans', Arial, sans-serif;
 }
 
 .catalog-item {
+  width: 220px;
+
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
 }
