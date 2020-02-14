@@ -50,16 +50,16 @@ a {
 
 /* КНОПКИ */
 .button {
+  box-sizing: border-box;
   display: block;
 
   min-height: 38px;
 
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 12px;
 
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 14px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
@@ -99,8 +99,7 @@ a {
 .button_bookmark {
   width: 135px;
 
-  padding-bottom: 7px;
-  padding-top: 7px;
+  padding-top: 9px;
 
   color: #32425c;
 
@@ -117,9 +116,15 @@ a {
 }
 
 .button_catalog {
+  font-family: 'PTSans', Arial, sans-serif;
   color: inherit;
 
   border: solid 1px #e5e5e5;
+}
+.button_catalog_active {
+  color: #ffffff;
+
+  background-color: #ee3643;
 }
 
 .button_catalog:hover {
@@ -265,6 +270,10 @@ a {
 /* СЕКЦИИ И ИХ ЧАСТИ */
 
 .section_palegray {
+  min-height: 261px;
+
+  padding-top: 67px;
+
   background-color: #f4f7f9;
 }
 
@@ -284,7 +293,7 @@ a {
 
 .section__heading {
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 0;
 
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 30px;
@@ -306,7 +315,7 @@ a {
 }
 
 .section__text {
-  margin-top: 36px;
+  margin-top: 30px;
   margin-bottom: 0;
 
   font-family: PTSans;
@@ -349,10 +358,6 @@ a {
   margin-top: 40px;
 }
 
-.services {
-  padding-top: 68px;
-}
-
 .services p {
   width: 398px;
 
@@ -361,6 +366,8 @@ a {
 
 /* СТАНИЦА КАТАЛОГА */
 .catalog-page {
+  padding-bottom: 60px;
+
   font-family: 'PTSans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -368,10 +375,19 @@ a {
 }
 
 .catalog-page__row {
+  margin-top: 0;
+
   background-color: #f2f6f8;
 }
 
+.filter {
+  width: 220px;
+}
+
 .filter__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: inherit;
   font-weight: normal;
 }
@@ -386,7 +402,29 @@ a {
 .filter legend {
   font-size: 17px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 17px;
+}
+
+.filter .button{
+  width: 140px;
+
+  margin-top: 75px;
+}
+
+.filter-row {
+  min-height: 38px;
+
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 18px;
+
+  background-color: #f7f3ec;
+}
+
+.catalog {
+  width: 700px;
+
+  margin-left: auto;
 }
 
 /* ФУТЕР */
@@ -866,7 +904,7 @@ a {
 
 .tabs__content h3 {
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 0;
 
   font-size: 36px;
   font-weight: normal;
@@ -933,6 +971,32 @@ a {
 
 
 /* НАВИГАЦИЯ В КАТАЛОГЕ */
+.catalog-nav__list {
+  align-items: center;
+
+  height: 59px;
+}
+
+.catalog-nav__item::after {
+  content: "";
+
+  display: inline-block;
+
+  width: 8px;
+  height: 12px;
+
+  margin-left: 15px;
+  margin-right: 15px;
+
+  background-image: url(../img/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-nav__item:last-child::after {
+  content: none;
+}
+
 .catalog-nav__item a {
   color: inherit;
 }
@@ -946,6 +1010,8 @@ a {
 
 .catalog-item {
   width: 220px;
+
+  margin-bottom: 20px;
 
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
@@ -985,6 +1051,17 @@ a {
 .filter__list {
   font-size: 15px;
   line-height: 20px;
+}
+
+/* */
+.page-nav__item {
+  width: 38px;
+
+  margin-right: 10px;
+}
+
+.page-nav__item:last-child {
+  width: 140px;
 }
 
 /* СОЦ.СЕТИ ФУТЕР */
