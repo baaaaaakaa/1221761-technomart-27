@@ -132,6 +132,9 @@ a {
 
 .button_promo {
   width: 135px;
+
+  margin-top: 15px;
+
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -266,6 +269,16 @@ a {
 }
 
 .section__row {
+  display: flex;
+  align-items: center;
+
+  min-height: 89px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 24px;
+
   background-color: #f9f5f0;
 }
 
@@ -281,7 +294,15 @@ a {
 }
 
 .section__heading_row {
+  margin-bottom: 0px;
+
   color: #32425c;
+}
+
+.section__row .button_red {
+  width: 253px;
+
+  margin-left: auto;
 }
 
 .section__text {
@@ -303,7 +324,7 @@ a {
   width: 386px;
 }
 
-.company .button{
+.company .button {
   width: 220px;
 
   margin-top: 37px;
@@ -316,7 +337,7 @@ a {
   margin-left: auto;
 }
 
-.contacts img{
+.contacts img {
   margin-top: 36px;
 }
 
@@ -324,8 +345,18 @@ a {
   width: 179px;
 }
 
-.contacts .button{
+.contacts .button {
   margin-top: 40px;
+}
+
+.services {
+  padding-top: 68px;
+}
+
+.services p {
+  width: 398px;
+
+  margin-bottom: 28px;
 }
 
 /* СТАНИЦА КАТАЛОГА */
@@ -448,8 +479,6 @@ a {
 
 /* ЗАКЛАДКИ-КОРЗИНА-ОФОРМЛЕНИЕ ЗАКАЗА */
 .header-bar__nav-list {
-  display: flex;
-
   width: 450px;
 
   margin: 0;
@@ -502,8 +531,6 @@ a {
 /* НАВИГАЦИЯ ПОЛЬЗОВАТЕЛЯ */
 
 .user-nav__list {
-  display: flex;
-  flex-wrap: wrap;
   align-self: flex-start;
 
   width: 300px;
@@ -551,6 +578,8 @@ a {
 
 .user-nav__item_enter {
   width: 121px;
+
+  margin-left: auto;
 }
 
 .user-nav__item_reg {
@@ -568,8 +597,6 @@ a {
 /* МЕНЮ */
 
 .header-nav__list {
-  display: flex;
-
   margin: 0;
   margin-top: 44px;
   padding: 0;
@@ -607,11 +634,46 @@ a {
 }
 
 /* ПРОМО НА ГЛАВНОЙ */
+.promo {
+  padding-top: 59px;
+  padding-bottom: 13px;
+}
+
 .promo-list {
+  justify-content: space-between;
+
   color: #ffffff;
 }
 
+.promo-list_left {
+  width: 620px;
+}
+
+.promo-list_left ul {
+  justify-content: space-between;
+
+  width: 620px;
+}
+
+.promo-list_right {
+  width: 300px;
+}
+
+.promo-item {
+  width: 300px;
+  min-height: 123px;
+
+  padding-top: 26px;
+  padding-left: 23px;
+
+
+  margin-bottom: 20px;
+}
+
 .promo-item h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 24px;
   line-height: 30px;
 }
@@ -639,22 +701,90 @@ a {
 /* */
 
 .promo-item_slider {
-  background-color: darkslategrey;
+  position: relative;
+
+  width: 620px;
+  min-height: 266px;
+
+  padding: 0;
 }
 
 .slider__slide h3 {
+  position: absolute;
+  top: 27px;
+  left: 24px;
+
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .slider__slide p {
+  position: absolute;
+  top: 65px;
+  left: 24px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 18px;
   line-height: 24px;
 }
 
+.slider__slide .button_red {
+  position: absolute;
+  top: 206px;
+  left: 25px;
+
+  width: 195px;
+}
+
+.slider__dotts {
+  position: absolute;
+  top: 220px;
+}
+
+.slider__button {
+  position: absolute;
+  top: 114px;
+
+  width: 25px;
+  height: 40px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  border: none;
+}
+
+.slider__button_prev {
+  left: 25px;
+  background-image: url(../img/icon-left.svg);
+}
+
+.slider__button_next {
+  left: 578px;
+  background-image: url(../img/icon-right.svg);
+}
+
 /* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
+.manufacturer-list {
+  justify-content: space-between;
+}
+
 .manufacturer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 220px;
+  min-height: 145px;
+
+  margin-bottom: 20px;
+
   border: solid 1px #e5e5e5;
 }
 
@@ -693,7 +823,13 @@ a {
 }
 
 /* */
+.tabs {
+  min-height: 330px;
+}
+
 .tabs__controls {
+  padding-top: 46px;
+
   font-size: 21px;
   font-weight: bold;
   line-height: 30px;
@@ -701,15 +837,61 @@ a {
 }
 
 .tabs__control {
+  width: 240px;
+
+  padding-top: 16px;
+  padding-bottom: 15px;
+
+  text-align: center;
+
   background-color: #32425c;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
 }
 
-.tabs__contents h3 {
+.tabs__contents {
+  flex-grow: 1;
+
+  padding-top: 48px;
+  padding-left: 80px;
+}
+
+.tabs__content {
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.tabs__content h3 {
+  margin-top: 0;
+  margin-bottom: 34px;
+
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
   color: #32425c;
+}
+
+.tabs__content p {
+  width: 379px;
+}
+
+.tab-1 {
+  background-image: url(../img/delivery.png);
+}
+
+.tab-2 {
+  background-image: url(../img/guarantee.png);
+}
+
+.tab-3 {
+  background-image: url(../img/credit.png);
+}
+
+.tab-3 .button_red{
+  width: 195px;
 }
 
 .tabs__control:hover {
@@ -757,8 +939,6 @@ a {
 
 /* КАТАЛОГ ТОВАРОВ*/
 .catalog-list {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 
   font-family: 'PTSans', Arial, sans-serif;
@@ -778,7 +958,7 @@ a {
 
 .catalog-item__heading {
   font-size: 18px;
-  line-height: 20;
+  line-height: 20px;
   text-transform: none;
   text-align: center;
 }
