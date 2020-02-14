@@ -890,7 +890,7 @@ a {
   background-image: url(../img/credit.png);
 }
 
-.tab-3 .button_red{
+.tab-3 .button_red {
   width: 195px;
 }
 
@@ -989,8 +989,6 @@ a {
 
 /* СОЦ.СЕТИ ФУТЕР */
 .footer-social__list {
-  display: flex;
-
   margin-left: 160px;
 
   font-size: 0px;
@@ -1036,7 +1034,6 @@ a {
 
 /* НАВИГАЦИЯ ФУТЕР */
 .footer-nav__list {
-  display: flex;
   align-items: center;
 
   margin-left: auto;
