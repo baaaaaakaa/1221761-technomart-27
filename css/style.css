@@ -424,6 +424,20 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 28px;
 }
 
+.new::after {
+  content: "";
+
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 59px;
+
+  background-image: url(../img/new-flag.png);
+}
+
 /* СТАНИЦА КАТАЛОГА */
 .catalog-page {
   padding-bottom: 60px;
@@ -796,6 +810,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .promo-item {
+  position: relative;
+
   width: 300px;
   min-height: 123px;
 
@@ -816,22 +832,37 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .promo-item_materials {
   background-color: #ffbf47;
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: top 31px right 43px;
 }
 
 .promo-item_tool {
   background-color: #3bbce3;
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: top 33px right 28px;
 }
 
 .promo-item_equipment {
   background-color: #dc91d8;
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: top 31px right 31px;
 }
 
 .promo-item_discount {
   background-color: #8ed78f;
+  background-image: url(../img/icon-4.svg);
+  background-repeat: no-repeat;
+  background-position: top 26px right 45px;
 }
 
 .promo-item_delivery {
   background-color: #ffc047;
+  background-image: url(../img/icon-5.svg);
+  background-repeat: no-repeat;
+  background-position: top 32px right 31px;
 }
 
 /* */
