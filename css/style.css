@@ -80,6 +80,10 @@ a {
 }
 
 .button_buy {
+  position: absolute;
+  top: 44px;
+  left: 41px;
+
   width: 135px;
 
   background-color: #63a63e;
@@ -96,7 +100,32 @@ a {
   box-shadow: none;
 }
 
+.button_buy::after {
+  content: "";
+
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url(../img/cart-icon.svg);
+
+  opacity: 0.3;
+}
+
+.button_buy:hover::after,
+.button_buy:active::after {
+  opacity: 1;
+}
+
 .button_bookmark {
+  position: absolute;
+  top: 89px;
+  left: 41px;
+
   width: 135px;
 
   padding-top: 9px;
@@ -122,7 +151,7 @@ a {
   border: solid 1px #e5e5e5;
 }
 
-.button_catalog_curent {
+.button_catalog_current {
   color: #ffffff;
 
   background-color: #ee3643;
@@ -1145,6 +1174,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .catalog-item {
+  position: relative;
+
   width: 220px;
 
   margin-right: 20px;
@@ -1168,6 +1199,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .catalog-item__heading {
+  margin-top: 10px;
+  margin-bottom: 15px;
+
   font-size: 18px;
   line-height: 20px;
   text-transform: none;
@@ -1175,9 +1209,12 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .catalog-item__price {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-size: 17px;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 38px;
   text-align: center;
   color: #ffffff;
 
@@ -1187,9 +1224,28 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .catalog-item__price_del {
+  display: block;
+  min-height: 18px;
+
+  margin-bottom: 10px;
+
+  line-height: 18px;
+  text-align: center;
   color: #999999;
 
   background-image: none;
+}
+
+.catalog-item .button{
+  visibility: hidden;
+}
+
+.catalog-item:hover img {
+  visibility: hidden;
+}
+
+.catalog-item:hover .button {
+  visibility: visible;
 }
 
 /* ФИЛЬТРЫ КАТАЛОГА */
