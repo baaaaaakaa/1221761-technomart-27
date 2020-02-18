@@ -103,7 +103,6 @@ a {
 .button_buy::after {
   content: "";
 
-  display: inline-block;
   position: absolute;
   top: 11px;
   left: 12px;
@@ -282,7 +281,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .search-form button {
-  display: inline-block;
   position: absolute;
   top: 12px;
   left: 17px;
@@ -456,7 +454,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .new::after {
   content: "";
 
-  display: inline-block;
   position: absolute;
   top: 0;
   right: 0;
@@ -657,7 +654,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .header-bar__nav-item a::before {
   content: "";
 
-  display: inline-block;
   position: absolute;
   top: 12px;
   left: 17px;
@@ -787,8 +783,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   text-align: center;
 }
-
-.header-nav__item:active {}
 
 .header-nav__item a {
   display: inline-block;
