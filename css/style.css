@@ -672,6 +672,10 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 140px;
 
   margin-top: 35px;
+  padding-top: 4px;
+
+  background-color: transparent;
+  outline: none;
 }
 
 .catalog {
