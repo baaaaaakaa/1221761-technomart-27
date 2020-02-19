@@ -203,8 +203,6 @@ a {
 
 .header-bar .flex-container {
   align-items: center;
-
-  min-height: 42px;
 }
 
 .header-bar__logo {
@@ -464,6 +462,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-image: url(../img/new-flag.png);
 }
 
+
 /* СТАНИЦА КАТАЛОГА */
 .catalog-page {
   padding-bottom: 60px;
@@ -492,25 +491,6 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: normal;
 }
 
-.filter fieldset {
-  margin: 0;
-  padding: 0;
-
-  border: none;
-}
-
-.filter legend {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 17px;
-}
-
-.filter .button {
-  width: 140px;
-
-  margin-top: 75px;
-}
-
 .filter-row {
   min-height: 38px;
 
@@ -519,6 +499,179 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-left: 18px;
 
   background-color: #f7f3ec;
+
+  border-radius: 5px;
+}
+
+.filter fieldset {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-bottom: 5px;
+
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter fieldset:last-of-type {
+  border: none;
+}
+
+.filter legend {
+  margin-bottom: 20px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 17px;
+}
+
+.filter input[type="checkbox"],
+.filter input[type="radio"] {
+  opacity: 0;
+}
+
+.filter input[type="checkbox"]:disabled + label,
+.filter input[type="radio"]:disabled + label {
+  opacity: 0.4;
+}
+
+.filter-slider__top {
+  position: relative;
+
+  min-height: 80px;
+
+  padding-left: 0;
+  padding-top: 39px;
+}
+
+.filter-slider__scale {
+  width: 180px;
+  height: 2px;
+
+  margin: auto;
+
+  background-color: #d7dcde;
+}
+
+.filter-slider__bar {
+  width: 152px;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.filter-slider__toggle {
+  position: absolute;
+  top: 30px;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filter-slider__toggle_min {
+  left: 20px;
+}
+
+.filter-slider__toggle_max {
+  right: 40px;
+}
+
+.filter-slider__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.filter-slider__bottom input {
+  width: 95px;
+
+  padding: 0;
+  padding-left: 10px;
+
+  text-align: center;
+
+  border: none;
+}
+
+.filter__item {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.filter-manufacturer label::before {
+  content: "";
+
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+
+  width: 27px;
+  height: 23px;
+
+  background-repeat: no-repeat;
+}
+
+.filter-manufacturer input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23c5c5c5' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23c5c5c5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
+}
+
+.filter-manufacturer input:checked + label:hover::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23b5b5b5' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23b5b5b5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
+}
+
+.filter-manufacturer input:not(:checked) + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23c5c5c5' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+}
+
+.filter-manufacturer input:not(:checked) + label:hover::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23b5b5b5' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+}
+
+.filter-power label::before {
+  content: "";
+
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+
+  width: 25px;
+  height: 25px;
+
+  background-repeat: no-repeat;
+}
+
+.filter-power input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill='%23c5c5c5' d='M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z'/%3E%3Ccircle fill='%23c5c5c5' cx='12.5' cy='12.5' r='4.5'/%3E%3C/svg%3E");
+}
+
+.filter-power input:checked + label:hover::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill='%23b5b5b5' d='M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z'/%3E%3Ccircle fill='%23b5b5b5' cx='12.5' cy='12.5' r='4.5'/%3E%3C/svg%3E");
+}
+
+.filter-power input:not(:checked) + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill='%23c5c5c5' d='M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z'/%3E%3C/svg%3E%0A");
+}
+
+.filter-power input:not(:checked) + label:hover::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill='%23b5b5b5' d='M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z'/%3E%3C/svg%3E%0A");
+}
+
+
+.filter .button {
+  width: 140px;
+
+  margin-top: 35px;
 }
 
 .catalog {
@@ -1162,9 +1315,25 @@ input[type="search"]::-webkit-search-results-decoration {
   color: inherit;
 }
 
+.catalog-nav__item:first-child a::after {
+  content: "";
+
+  display: inline-block;
+
+  width: 14px;
+  height: 12px;
+
+  background-image: url(../img/icon-home.svg);
+}
+
 /* КАТАЛОГ ТОВАРОВ*/
 .catalog-list {
   font-family: 'PTSans', Arial, sans-serif;
+}
+
+.catalog-list .new::after {
+  top: -1px;
+  right: -1px;
 }
 
 .catalog-item {
@@ -1230,7 +1399,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-image: none;
 }
 
-.catalog-item .button{
+.catalog-item .button {
   visibility: hidden;
 }
 

@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <title>Интернет-магазин «Техномарт»</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -75,7 +78,7 @@
   <main>
     <section class="catalog-page fixed-container">
       <ul class="catalog-nav__list list flex-container">
-        <li class="catalog-nav__item"><a href="index.html">На главную</a></li>
+        <li class="catalog-nav__item"><a href="index.html"><span class="visually-hidden">На главную</span></a></li>
         <li class="catalog-nav__item"><a href="catalog.html">Каталог</a></li>
         <li class="catalog-nav__item"><a href="#">Инструменты</a></li>
         <li class="catalog-nav__item"><a href="#">Перфораторы</a></li>
@@ -90,7 +93,32 @@
           <h2 class="filter__heading filter-row">Фильтр:</h2>
 
           <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+            <fieldset class="filter-slider">
+              <legend>Цена:</legend>
+
+              <div>
+                <div class="filter-slider__top filter-row">
+                  <div class="filter-slider__scale">
+                    <div class="filter-slider__bar"></div>
+
+                    <div class="filter-slider__toggle filter-slider__toggle_min"></div>
+                    <div class="filter-slider__toggle filter-slider__toggle_max"></div>
+                  </div>
+                </div>
+
+                <div class="filter-slider__bottom">
+                  <label class="visually-hidden" for="min-price">Минимальная цена</label>
+                  <input class="filter-row" id="min-price" name="min-price" type="number" value="0">
+
+                  &mdash;
+
+                  <label class="visually-hidden" for="max-price">Максимальная цена</label>
+                  <input class="filter-row" id="max-price" name="max-price" type="number" value="30000">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-manufacturer">
               <legend>Производители:</legend>
 
               <ul class="filter__list list">
@@ -98,26 +126,26 @@
                   <input id="Boch" type="checkbox" name="Bosch" checked>
                   <label for="Boch">Bosch</label>
                 </li>
-                <li>
+                <li class="filter__item">
                   <input id="Interskol" type="checkbox" name="Interskol">
                   <label for="Interskol">Интерскол</label>
                 </li>
-                <li>
+                <li class="filter__item">
                   <input id="Makita" type="checkbox" name="Makita" checked>
                   <label for="Makita">Makita</label>
                 </li>
-                <li>
+                <li class="filter__item">
                   <input id="Dewalt" type="checkbox" name="Dewalt">
                   <label for="Dewalt">Dewalt</label>
                 </li>
-                <li>
+                <li class="filter__item">
                   <input id="Hitachi" type="checkbox" name="Hitachi">
                   <label for="Hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="filter-power">
               <legend>Питание:</legend>
 
               <ul class="filter__list list">
@@ -271,12 +299,12 @@
             </li>
           </ul>
 
-            <ul class="page-nav__list list flex-container">
-              <li class="page-nav__item"><a class="button button_catalog button_catalog_current" href="#" aria-label="Первая страница">1</a></li>
-              <li class="page-nav__item"><a class="button button_catalog" href="#" aria-label="Вторая страница">2</a></li>
-              <li class="page-nav__item"><a class="button button_catalog" href="#" aria-label="Третья страница">3</a></li>
-              <li class="page-nav__item"><a class="button button_catalog button_catalog_next" href="#">Следующая</a></li>
-            </ul>
+          <ul class="page-nav__list list flex-container">
+            <li class="page-nav__item"><a class="button button_catalog button_catalog_current" href="#" aria-label="Первая страница">1</a></li>
+            <li class="page-nav__item"><a class="button button_catalog" href="#" aria-label="Вторая страница">2</a></li>
+            <li class="page-nav__item"><a class="button button_catalog" href="#" aria-label="Третья страница">3</a></li>
+            <li class="page-nav__item"><a class="button button_catalog button_catalog_next" href="#">Следующая</a></li>
+          </ul>
         </section>
       </div>
     </section>
