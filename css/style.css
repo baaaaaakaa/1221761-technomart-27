@@ -496,7 +496,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
   margin-bottom: 20px;
   padding-top: 10px;
-  padding-left: 18px;
+  padding-left: 17px;
+  padding-right: 17px;
 
   background-color: #f7f3ec;
 
@@ -540,7 +541,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   min-height: 80px;
 
-  padding-left: 0;
   padding-top: 39px;
 }
 
@@ -1403,6 +1403,67 @@ input[type="search"]::-webkit-search-results-decoration {
 
   background-image: url(../img/icon-home.svg);
 }
+
+/* */
+.sort__list {
+  justify-content: space-between;
+
+  min-width: 354px;
+
+  margin-left: auto;
+}
+
+.sort__item label{
+  color: rgba(0, 0, 0, 0.18);
+
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort__item label:hover{
+  color: inherit;
+
+  border-bottom-style: solid;
+}
+
+.sort__item input:checked + label{
+  color: #ee3643;
+
+  border: none;
+}
+
+.sort__order {
+  margin-left: 46px;
+}
+
+.sort__order li {
+  margin-right: 21px;
+}
+
+.sort__order li:last-of-type {
+  margin-right: 0;
+}
+
+.sort__order label{
+  display: inline-block;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpath fill='%23c5c5c5' d='M5.5 0L0 10h11z'/%3E%3C/svg%3E ");
+}
+
+.sort__order label:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpath fill='%2300000' d='M5.5 0L0 10h11z'/%3E%3C/svg%3E ");
+}
+
+.sort__order input:checked + label {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpath fill='%23ee3643' d='M5.5 0L0 10h11z'/%3E%3C/svg%3E ");
+}
+
+.order__descending label{
+  transform: rotate(180deg);
+}
+
 
 /* КАТАЛОГ ТОВАРОВ*/
 .catalog-list {

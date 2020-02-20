@@ -53,7 +53,7 @@
           <a href="#">Равшан Джамшутович</a>
         </li>
         <li class="user-nav__item user-nav__item_exit">
-          <a  href="#"><span class="visually-hidden">Выйти</span></a>
+          <a href="#"><span class="visually-hidden">Выйти</span></a>
         </li>
         <li class="user-nav__item user-nav__item_small">
           <a href="#">Мои заказы</a>
@@ -169,8 +169,36 @@
         <section class="catalog">
           <h2 class="visually-hidden">Список перфораторов</h2>
 
-          <div class="sort filter-row">
+          <div class="sort filter-row flex-container">
             <h2 class="filter__heading">Сортировка:</h2>
+            <ul class="sort__list list flex-container">
+              <li class="sort__item">
+                <input class="visually-hidden" id="sort1" type="radio" name="sort" checked>
+                <label for="sort1">По цене</label>
+              </li>
+
+              <li class="sort__item">
+                <input class="visually-hidden" id="sort2" type="radio" name="sort">
+                <label for="sort2">По типу</label>
+              </li>
+
+              <li class="sort__item">
+                <input class="visually-hidden" id="sort3" type="radio" name="sort">
+                <label for="sort3">По функционалу</label>
+              </li>
+            </ul>
+
+            <ul class="sort__order list flex-container">
+              <li class="order__ascending">
+                <input class="visually-hidden" id="ascending" type="radio" name="order" checked>
+                <label for="ascending"><span class="visually-hidden">От меньшего значения к большему</span></label>
+              </li>
+
+              <li class="order__descending">
+                <input class="visually-hidden" id="descending" name="order" type="radio">
+                <label for="descending"><span class="visually-hidden">От большего значения к меньшему</span></label>
+              </li>
+            </ul>
           </div>
 
           <ul class="catalog-list list flex-container">
