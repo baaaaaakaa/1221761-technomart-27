@@ -411,10 +411,17 @@
     </div>
   </footer>
 
-  <section>
-    <h2>Обратная связь</h2>
 
-    <form action="https://echo.htmlacademy.ru" method="post">
+  <!-- <section>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae4d90768a12143c847f4a06f42c1eaf072efb63b337380db76b3688ddb0775d7&amp;width=940&amp;height=446&amp;lang=ru_RU&amp;scroll=true"></script>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616006086!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1582306263104!5m2!1sru!2sru" width="940" height="446" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </section> -->
+
+  <section class="popup popup-feedback">
+    <h2 class="visually-hidden">Обратная связь</h2>
+
+    <form class="feedback flex-container" id="feedback" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="feedback-name">Ваше имя:</label>
         <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
@@ -425,12 +432,18 @@
         <input id="feedback-email" type="email" name="email" value="" placeholder="email@example.com">
       </p>
 
-      <label for="feedback-text">Текст письма:</label>
-      <textarea id="feedback-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-
-      <button type="submit">Отправить</button>
+      <p>
+        <label for="feedback-text">Текст письма:</label>
+        <textarea id="feedback-text" name="text" placeholder="В свободной форме"></textarea>
+      </p>
     </form>
 
-    <button type="button">Закрыть</button>
+    <div class="popup__bottom">
+      <button class="button button_red" type="submit" form="feedback">Отправить</button>
+    </div>
+
+    <button class="popup__close" type="button">Закрыть</button>
   </section>
-</body></html>
+</body>
+
+</html>
