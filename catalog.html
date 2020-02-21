@@ -7,8 +7,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -329,12 +328,15 @@
             </li>
           </ul>
 
-          <ul class="page-nav__list list flex-container">
-            <li class="page-nav__item"><a class="button button_catalog button_catalog_current" href="#" aria-label="Первая страница">1</a></li>
-            <li class="page-nav__item"><a class="button button_catalog" href="#" aria-label="Вторая страница">2</a></li>
-            <li class="page-nav__item"><a class="button button_catalog" href="#" aria-label="Третья страница">3</a></li>
-            <li class="page-nav__item"><a class="button button_catalog button_catalog_next" href="#">Следующая</a></li>
-          </ul>
+          <div class="page-nav flex-container">
+            <ul class="page-nav__list list">
+              <li class="page-nav__item"><a class="button button_catalog button_catalog_current" href="#" aria-label="Первая страница">1</a></li>
+              <li class="page-nav__item"><a class="button button_catalog" href="#" aria-label="Вторая страница">2</a></li>
+              <li class="page-nav__item"><a class="button button_catalog" href="#" aria-label="Третья страница">3</a></li>
+            </ul>
+
+            <a class="button button_catalog button_catalog_next" href="#">Следующая</a>
+          </div>
         </section>
       </div>
     </section>
