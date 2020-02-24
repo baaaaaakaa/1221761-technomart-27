@@ -28,8 +28,8 @@
         </form>
 
         <ul class="header-bar__nav-list list flex-container">
-          <li class="header-bar__nav-item"><a class="header-bar__bookmark" href="">Закладки</a></li>
-          <li class="header-bar__nav-item"><a class="header-bar__cart" href="">Корзина</a></li>
+          <li class="header-bar__nav-item"><a class="header-bar__bookmark" href="">Закладки: 0</a></li>
+          <li class="header-bar__nav-item"><a class="header-bar__cart" href="">Корзина: 0</a></li>
           <li class="header-bar__nav-item header-bar__nav-item_green"><a href="">Оформить заказ</a></li>
         </ul>
       </div>
@@ -143,13 +143,13 @@
 
     <section class="fixed-container popular-item">
       <div class="section__row">
-        <h2 class="section__heading section__heading_row">Популярные товары</h2>
+        <h2 class="section__heading section__heading_row">Популярные товары:</h2>
 
         <a class="button button_red" href="#">Все популярные товары</a>
       </div>
 
       <ul class="catalog-list list flex-container">
-        <li class="catalog-item">
+        <li class="catalog-item" tabindex="0">
           <img src="img/item-image_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
 
           <a class="button button_bookmark" href="#">В закладки</a>
@@ -163,7 +163,7 @@
           <p class="catalog-item__price">25500 Р.</p>
         </li>
 
-        <li class="catalog-item">
+        <li class="catalog-item" tabindex="0">
           <img src="img/item-image_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 
           <a class="button button_bookmark" href="#">В закладки</a>
@@ -177,8 +177,8 @@
           <p class="catalog-item__price">15500 Р.</p>
         </li>
 
-        <li class="catalog-item">
-          <img src="img/item-image_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+        <li class="catalog-item" tabindex="0">
+          <img src="img/item-image_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
 
           <a class="button button_bookmark" href="#">В закладки</a>
 
@@ -191,8 +191,8 @@
           <p class="catalog-item__price">25500 Р.</p>
         </li>
 
-        <li class="catalog-item new">
-          <img src="img/item-image_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+        <li class="catalog-item new" tabindex="0">
+          <img src="img/item-image_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
 
           <a class="button button_bookmark" href="#">В закладки</a>
 
@@ -202,7 +202,7 @@
 
           <del class="catalog-item__price catalog-item__price_del"></del>
 
-          <p class="catalog-item__price">15500 Р.</p>
+          <p class="catalog-item__price">12500 Р.</p>
         </li>
       </ul>
     </section>
@@ -412,13 +412,13 @@
   </footer>
 
 
-  <!-- <section>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae4d90768a12143c847f4a06f42c1eaf072efb63b337380db76b3688ddb0775d7&amp;width=940&amp;height=446&amp;lang=ru_RU&amp;scroll=true"></script>
-
+  <section class="popup-map visually-hidden">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616006086!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1582306263104!5m2!1sru!2sru" width="940" height="446" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-  </section> -->
 
-  <section class="popup popup-feedback">
+    <button class="popup__close" type="button">Закрыть</button>
+  </section>
+
+  <section class="popup popup-feedback visually-hidden">
     <h2 class="visually-hidden">Обратная связь</h2>
 
     <form class="feedback flex-container" id="feedback" action="https://echo.htmlacademy.ru" method="post">
