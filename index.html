@@ -90,15 +90,18 @@
             </li>
 
             <li class="promo-item promo-item_slider slider">
+              <input class="visually-hidden slide-1_input" id="slide-1" type="radio" name="slides" checked>
+              <input class="visually-hidden slide-2_input" id="slide-2" type="radio" name="slides">
+
               <ul class="slider__slides list">
-                <li class="slider__slide">
+                <li class="slider__slide slide-1">
                   <img src="img/slide-image-1.jpg" alt="" width="620px" height="266px">
                   <h3>Дрели</h3>
                   <p>Соседям на радость!</p>
                   <a class="button button_red" href="#">Открыть каталог</a>
                 </li>
 
-                <li class="slider__slide visually-hidden">
+                <li class="slider__slide slide-2">
                   <img src="img/slide-image-2.jpg" alt="" width="620px" height="266px">
                   <h3>Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
@@ -106,14 +109,13 @@
                 </li>
               </ul>
 
-              <ul class="slider__dotts list">
-                <li class="slider__dott"></li>
-                <li class="slider__dott"></li>
+              <ul class="slider__dotts list flex-container">
+                <li><label  class="slider__dott slide-1" for="slide-1" aria-label="Первый слайд" tabindex="0"></label></li>
+                <li><label  class="slider__dott slide-2" for="slide-2" aria-label="Второй слайд" tabindex="0"></label></li>
               </ul>
 
-              <button class="slider__button slider__button_prev" type="button" aria-label="Предидущий слайд"></button>
-
-              <button class="slider__button slider__button_next" type="button" aria-label="Следующий слайд"></button>
+              <label class="slider__button slider__button_prev" for="slide-1" aria-label="Предидущий слайд" tabindex="0"></label>
+              <label class="slider__button slider__button_next" for="slide-2" aria-label="Следующий слайд" tabindex="0"></label>
             </li>
           </ul>
         </li>
@@ -274,15 +276,15 @@
 
           <ul class="tabs__controls list">
             <li class="tabs__control">
-              <label for="tab-1">Доставка</label>
+              <label for="tab-1" tabindex="0">Доставка</label>
             </li>
 
             <li class="tabs__control">
-              <label for="tab-2">Гарантия</label>
+              <label for="tab-2" tabindex="0">Гарантия</label>
             </li>
 
             <li class="tabs__control">
-              <label for="tab-3">Кредит</label>
+              <label for="tab-3" tabindex="0">Кредит</label>
             </li>
           </ul>
 
@@ -412,7 +414,9 @@
   </footer>
 
 
-  <section class="popup-map visually-hidden">
+  <section class="popup popup-map visually-hidden">
+    <h2 class="visually-hidden">Интерактивная карта</h2>
+
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616006086!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1582306263104!5m2!1sru!2sru" width="940" height="446" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
     <button class="popup__close" type="button">Закрыть</button>
@@ -444,6 +448,4 @@
 
     <button class="popup__close" type="button">Закрыть</button>
   </section>
-</body>
-
-</html>
+</body></html>

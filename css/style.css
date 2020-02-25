@@ -1116,7 +1116,7 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 620px;
 }
 
-.promo-list_left ul {
+.promo-list_left > ul {
   justify-content: space-between;
 
   width: 620px;
@@ -1226,6 +1226,39 @@ input[type="search"]::-webkit-search-results-decoration {
 .slider__dotts {
   position: absolute;
   top: 220px;
+  left: 295px;
+}
+
+.slider__dott {
+  position: relative;
+
+  display: block;
+
+  width: 10px;
+  height: 10px;
+
+  margin-right: 10px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.slider__dott::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+
+  width: 6px;
+  height: 6px;
+
+  background-color: #ee3643;
+  border-radius: 50%;
 }
 
 .slider__button {
@@ -1241,6 +1274,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-size: contain;
 
   border: none;
+  cursor: pointer;
 }
 
 .slider__button_prev {
@@ -1251,6 +1285,16 @@ input[type="search"]::-webkit-search-results-decoration {
 .slider__button_next {
   right: 20px;
   background-image: url(../img/icon-right.svg);
+}
+
+.slide-1_input:not(:checked) ~ .slider__slides > .slide-1 ,
+.slide-1_input:not(:checked) ~ .slider__dotts  .slide-1::after {
+  display: none;
+}
+
+.slide-2_input:not(:checked) ~ .slider__slides > .slide-2 ,
+.slide-2_input:not(:checked) ~ .slider__dotts  .slide-2::after {
+  display: none;
 }
 
 /* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
@@ -1357,6 +1401,8 @@ input[type="search"]::-webkit-search-results-decoration {
   display: inline-block;
 
   width: 100%;
+
+  cursor: pointer;
 }
 
 .tabs__contents {
@@ -1747,12 +1793,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .popup-map {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  z-index: 998;
+  width: 940px;
 
-  transform: translateX(-50%) translateY(-50%);
+  border: none;
 
   box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.35);
 }
