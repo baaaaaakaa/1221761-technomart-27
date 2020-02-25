@@ -727,6 +727,10 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
 }
 
+.sort .filter__heading{
+  max-width: 25%;
+}
+
 .catalog {
   width: 700px;
 
@@ -1541,7 +1545,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .sort__list {
   justify-content: space-between;
 
-  min-width: 354px;
+  width: 354px;
 
   margin-left: auto;
 }
