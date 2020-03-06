@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -400,16 +400,17 @@
     </div>
   </footer>
 
-  <section class="popup popup-catalog visually-hidden">
+  <section class="popup popup-catalog">
     <h2>Товар добавлен в корзину!</h2>
 
     <div class="popup__bottom">
       <a class="button button_red" href="#">Оформить заказ</a>
 
-      <button class="button button_white" type="button">Продолжить покупки</button>
+      <button class="button button_white popup-close" type="button">Продолжить покупки</button>
     </div>
 
-    <button class="popup__close" type="button">Закрыть</button>
+    <button class="popup__close popup-close" type="button">Закрыть</button>
   </section>
 
+  <script src="js/script.js"></script>
 </body></html>
