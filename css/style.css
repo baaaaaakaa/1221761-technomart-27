@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: normal;
@@ -63,7 +63,7 @@ a {
   padding-top: 11px;
   padding-bottom: 9px;
 
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -154,7 +154,7 @@ a {
 .button_catalog {
   padding-top: 11px;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   color: inherit;
 
@@ -421,7 +421,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: 0;
   margin-bottom: 0;
 
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
@@ -444,7 +444,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: 25px;
   margin-bottom: 0;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -514,7 +514,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .catalog-page {
   padding-bottom: 60px;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1624,7 +1624,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* КАТАЛОГ ТОВАРОВ*/
 .catalog-list {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .catalog-list .new::after {
@@ -1892,7 +1892,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-left: 14px;
   padding-right: 10px;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
 
